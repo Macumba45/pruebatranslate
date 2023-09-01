@@ -17,7 +17,7 @@ exports.modules = {
   \**************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"Index":{"title":"Hello world!","subtitle":"This is a subtitle","subsubtitle":"This is a subsubtitle"}}');
+module.exports = JSON.parse('{"Index":{"title":"Hello world!","subtitle":"This is a subtitle","subsubtitle":"This is a subsubtitle"},"Navigation":{"home":"Home","about":"About","contact":"Contact"},"LocaleSwitcher":{"label":"Language","en":"English","es":"Spanish"}}');
 
 /***/ })
 

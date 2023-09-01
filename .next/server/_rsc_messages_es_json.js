@@ -17,7 +17,7 @@ exports.modules = {
   \**************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"Index":{"title":"Hola mundo!","subtitle":"Esto es una aplicación de ejemplo para el curso de React Native de Coderhouse","subsubtitle":"Puedes ver el código fuente en"}}');
+module.exports = JSON.parse('{"Index":{"title":"Hola mundo!","subtitle":"Esto es una aplicación de ejemplo para el curso de React Native de Coderhouse","subsubtitle":"Puedes ver el código fuente en"},"Navigation":{"home":"Inicio","about":"Acerca de","contact":"Contacto"},"LocaleSwitcher":{"label":"Idioma","es":"Español","en":"Inglés"}}');
 
 /***/ })
 
