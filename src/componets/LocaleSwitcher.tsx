@@ -37,7 +37,7 @@ export default function LocaleSwitcher() {
                 <option value="en">{t('en')}</option>
                 <option value="es">{t('es')}</option>
             </select>
-            <span className="pointer-events-none absolute top-[8px] right-2">⌄</span>
+            <span className="pointer-events-none absolute top-[8px] right-2"></span>
         </label>
     );
 }
