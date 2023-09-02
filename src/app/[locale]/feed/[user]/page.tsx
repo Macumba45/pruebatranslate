@@ -8,7 +8,6 @@ import RoomIcon from '@mui/icons-material/Room'
 import ViewCarouselIcon from '@mui/icons-material/ViewCarousel'
 import ModalUserMarkers from '@/components/ModalMarkersUser'
 import AddCommentIcon from '@mui/icons-material/AddComment'
-import { UserMarker } from '@/app/maps/type'
 import CommentModal from '@/components/ModalComments'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import SimpleBottomNavigation from '@/components/BottomNav'
@@ -34,8 +33,10 @@ import {
     UserContainerData,
     nameStyles,
 } from './style'
-import { Store } from '@/app/store/type'
-import { BlaBlaFish } from '@/app/blablafish/type'
+import { UserMarker } from '../../maps/type'
+import { BlaBlaFish } from '../../blablafish/type'
+import { Store } from '../../store/type'
+
 
 interface Props {
     params: {

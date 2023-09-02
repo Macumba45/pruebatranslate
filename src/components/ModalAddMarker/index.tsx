@@ -1,5 +1,4 @@
 import React, { FC, useState } from 'react'
-import { useLogicMaps } from '@/app/maps/logic'
 import { SelectChangeEvent } from '@mui/material'
 import ButtonComp from '@/components/Button'
 import { LoadingButton } from '@mui/lab'
@@ -14,6 +13,7 @@ import {
     TextField,
     Snackbar,
 } from '@mui/material'
+import { useLogicMaps } from '@/app/[locale]/maps/logic'
 
 interface Props {
     isOpen: boolean

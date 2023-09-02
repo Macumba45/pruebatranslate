@@ -10,8 +10,8 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import { InputsContainer } from './styles'
 import Snackbar from '@mui/material/Snackbar'
 import MuiAlert from '@mui/material/Alert'
-import { useLogicBlaBla } from '@/app/blablafish/logic'
-import { BlaBlaFish } from '@/app/blablafish/type'
+import { useLogicBlaBla } from '@/app/[locale]/blablafish/logic'
+import { BlaBlaFish } from '@/app/[locale]/blablafish/type'
 import { LoadingButton } from '@mui/lab'
 
 interface Props {

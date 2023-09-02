@@ -8,7 +8,7 @@ import { defaultStylesMaps, stylesMaps } from './style'
 import { Style, User, UserMarker } from './type'
 import { useMediaQuery } from 'react-responsive'
 import { MarkerType } from './type'
-import { getAuthenticatedToken } from 'lib/storage/storage'
+import { getAuthenticatedToken } from '@/lib/storage/storage'
 
 export const useLogicMaps = () => {
     const addUserMarker = useCallback(async (userMark: UserMarker) => {

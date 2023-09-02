@@ -5,9 +5,9 @@ import { MarkerType, UserMarker } from './type'
 import { useLogicMaps } from './logic'
 import { getAuthenticatedToken } from '@/lib/storage/storage'
 import { useRouter } from 'next/navigation'
-import FloatLoginButton from '@/components/FloatLoginButton'
 import Link from 'next/link'
 import { MarkerClusterer } from '@googlemaps/markerclusterer'
+import FloatLoginButton from '@/components/FloatLoginButton'
 import CommentModal from '@/components/ModalComments'
 import SimpleBottomNavigation from '@/components/BottomNav'
 import CircularIndeterminate from '@/components/Loader'
@@ -22,10 +22,10 @@ import ModalCrearMarcador from '@/components/ModalAddMarker'
 import ModalUserMarkers from '@/components/ModalMarkersUser'
 import AccountMenu from '@/components/Menu'
 import FilterButton from '@/components/FilterButton'
-import MarkerUserIcon from '../../assets/location.png'
-import hiddenMarker from '../../assets/hostage.png'
-import customMarkerIconShop from '../../assets/tienda.png'
-import customMarkerIconPlace from '../../assets/destino.png'
+import MarkerUserIcon from '../../../assets/location.png'
+import hiddenMarker from '../../../assets/hostage.png'
+import customMarkerIconShop from '../../../assets/tienda.png'
+import customMarkerIconPlace from '../../../assets/destino.png'
 import SearchIcon from '@mui/icons-material/Search'
 import AddCommentIcon from '@mui/icons-material/AddComment'
 import Badge from '@mui/material/Badge'
@@ -130,7 +130,7 @@ const GoogleMapComp: FC = () => {
     const router = useRouter()
 
     const [selectedMarkers, setSelectedMarkers] = useState<
-    google.maps.Marker[]
+        google.maps.Marker[]
     >([])
 
     const [locationUser, setLocationUser] =
@@ -406,7 +406,7 @@ const GoogleMapComp: FC = () => {
                         url: iconUrl?.url,
                         scaledSize:
                             iconUrl.url ===
-                            '/_next/static/media/algas.f94c4aec.png'
+                                '/_next/static/media/algas.f94c4aec.png'
                                 ? new google.maps.Size(36, 36)
                                 : new google.maps.Size(26, 26),
                     },
@@ -734,19 +734,19 @@ const GoogleMapComp: FC = () => {
                                                     {new Date(
                                                         marker.createdAt
                                                     ) >= oneWeekAgoNew ? (
-                                                            <Typography
-                                                                component="span"
-                                                                variant="body2"
-                                                                color="secondary"
-                                                                style={{
-                                                                    display: 'flex',
-                                                                    flexDirection:
+                                                        <Typography
+                                                            component="span"
+                                                            variant="body2"
+                                                            color="secondary"
+                                                            style={{
+                                                                display: 'flex',
+                                                                flexDirection:
                                                                     'column',
-                                                                }}
-                                                            >
+                                                            }}
+                                                        >
                                                             Nuevo
-                                                            </Typography>
-                                                        ) : null}
+                                                        </Typography>
+                                                    ) : null}
                                                 </>
                                             }
                                         />

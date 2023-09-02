@@ -1,5 +1,4 @@
 import React, { FC, useState } from 'react'
-import { useLogicStore } from '@/app/store/logic'
 import { LoadingButton } from '@mui/lab'
 import MuiAlert from '@mui/material/Alert'
 import {
@@ -16,6 +15,7 @@ import {
     TextField,
 } from '@mui/material'
 import { ModalWrapper, ModalContent } from './styles'
+import { useLogicStore } from '@/app/[locale]/store/logic'
 
 interface Props {
     open: boolean

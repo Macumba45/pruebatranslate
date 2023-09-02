@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -9,6 +8,8 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -22,14 +23,26 @@
         "name": "next"
       }
     ],
-    "strict": false,
-    "forceConsistentCasingInFileNames": true
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/api/signup.ts",
+    "src/app/api/auth/NextAuth.js",
+    "pages/api/markers/marker.ts",
+    "src/app/utils/cloudinary.ts",
+    "src/app/utils/formidable.js",
+    "pages/api/upload.js",
+    "webpack.config.js",
+    "pages/api/markers/autoDeleteMarkers.ts",
+    "i18n.js"
   ],
   "exclude": [
     "node_modules"

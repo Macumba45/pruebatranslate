@@ -16,7 +16,7 @@ import {
     TitleHeader,
     VideoContainer,
 } from './style'
-import LocaleSwitcher from 'componets/LocaleSwitcher'
+import LocaleSwitcher from '@/components/LocaleSwitcher'
 
 
 const HeaderComp: FC = () => {

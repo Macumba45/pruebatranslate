@@ -1,8 +1,8 @@
-import StyledComponentsRegistry from 'lib/registry';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import StyledTheme from 'style/styledTheme';
+import StyledTheme from '@/style/styledTheme';
 import './reset.css'
+import StyledComponentsRegistry from '@/lib/registry';
 
 
 export function generateStaticParams() {

@@ -1,17 +1,17 @@
 'use client'
 
 import { FC, useEffect, useState, memo } from 'react'
-import SimpleBottomNavigation from '@/components/BottomNav'
 import AccountMenu from '@/components/Menu'
 import FloatAddBlaBlaFish from '@/components/FloatAddBlaBlaFish'
-import CardBlaBlaFish from '@/components/CardBlaBlaFish'
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle'
-import CreateTripModal from '@/components/ModalBlaBlaFish'
 import { useLogicBlaBla } from './logic'
 import { BlaBlaFish } from './type'
-import CircularIndeterminate from '@/components/Loader'
-import { Avatar } from '@mui/material'
 import FloatLoginButton from '@/components/FloatLoginButton'
+import CardBlaBlaFish from '@/components/CardBlaBlaFish'
+import CircularIndeterminate from '@/components/Loader'
+import CreateTripModal from '@/components/ModalBlaBlaFish'
+import SimpleBottomNavigation from '@/components/BottomNav'
+import { Avatar } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import {
     CardContainer,
@@ -22,6 +22,7 @@ import {
     TextNav,
     ContainerMenu,
 } from './style'
+
 
 const BlaBlaFish: FC = () => {
     const {

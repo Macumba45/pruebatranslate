@@ -1,7 +1,6 @@
 import React, { FC, useEffect, useState } from 'react'
 import CheckIcon from '@mui/icons-material/Check'
-import { feedUseLogic } from '@/app/feed/logic'
-import { Comments } from '@/app/maps/type'
+
 import { Container } from './styles'
 import { Delete } from '@mui/icons-material'
 import { getAuthenticatedToken } from '@/lib/storage/storage'
@@ -15,6 +14,8 @@ import {
     Paper,
     IconButton,
 } from '@mui/material'
+import { Comments } from '@/app/[locale]/maps/type'
+import { feedUseLogic } from '@/app/[locale]/feed/logic'
 
 interface CommentSectionProps {
     comments: Comments[]
